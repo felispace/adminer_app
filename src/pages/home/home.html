@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Indicadores</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+<ion-card>
+  <ion-card-header>
+    <h1 text-center>Ticket Abiertos</h1>
+    <h3 text-center>Con fecha actual</h3>
+    <p text-center>2017-05-06</p>
+  </ion-card-header>
+    <ion-card-content>
+      <ion-badge color="verde"><ion-icon name="folder"></ion-icon><h1 (click)="onClick()" class="contador">31</h1></ion-badge>
+
+  </ion-card-content>
+</ion-card>
+<br>
+<ion-card>
+  <ion-card-header>
+    <h1 text-center>Ticket Cerrados</h1>
+    <h3 text-center>Con fecha actual</h3>
+    <p text-center>2017-05-06</p>
+  </ion-card-header>
+    <ion-card-content>
+      <ion-badge color="danger"><ion-icon name="checkbox"></ion-icon><h1 class="contador">50</h1></ion-badge>
+  </ion-card-content>
+
+</ion-card>
+</ion-content>

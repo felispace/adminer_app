@@ -1,0 +1,18 @@
+     <ion-header>
+    <ion-navbar>
+         <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>
+        Crear nuevo ticket
+        </ion-title>
+    </ion-navbar>
+    </ion-header>
+    <ion-content>
+    <ion-searchbar placeholder="Digita el identificador" (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+        <button ion-item *ngFor="let patente of patentes" (tap)="getPatente($event, patente.id)">
+            {{patente.id}}
+        </button>
+    </ion-list>
+    </ion-content>

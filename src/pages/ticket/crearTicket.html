@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>Nuevo Ticket</ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="bandejaEntrada()">
+          <ion-icon name="mail-open"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <div no-lines padding-top>
+            <form [formGroup]="formTicket">
+
+              <ion-item margin-bottom>
+                  <ion-input type="text" [(ngModel)]="falla" placeholder="Falla" formControlName="falla"></ion-input>
+              </ion-item>
+
+              <ion-item margin-bottom>
+                  <ion-input type="text" [(ngModel)]="desFalla" placeholder="Descripción de la falla" formControlName="desFalla"></ion-input>
+              </ion-item>
+
+              <ion-item no-lines>
+                    <ion-select  formControlName="faena" placeholder="Seleccionar faena">
+                        <ion-option *ngFor="let faena of faenas | async">{{faena.nombre_faena}}</ion-option>
+                    </ion-select>
+              </ion-item>
+
+          <ion-item no-lines margin-top>
+             <ion-input type="text" [(ngModel)]="asistente" placeholder="Asignar asistente" formControlName="asistente"></ion-input>
+          </ion-item>
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-fab right>
+                    <button ion-fab color="danger" (click)="abrir_camara()"><ion-icon name="add"></ion-icon><ion-icon name="camera"></ion-icon></button>
+                  </ion-fab>
+                  Imagen de la Falla
+                </ion-card-header>
+                <ion-card-content>
+                  <img [src]="imgPreview" alt="">
+                </ion-card-content>
+              </ion-card>
+              <ion-item>
+                <button ion-button type="button" (click)="confirmarTicket()"  block  [disabled]="!formTicket.valid" class="boton">Crear ticket</button>
+              </ion-item>
+              <br>
+        </form>
+      </div>
+      </ion-content>

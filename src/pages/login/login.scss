@@ -1,0 +1,83 @@
+page-login {
+
+  .content {
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-background-page {
+    position:fixed;
+    text-align: center;
+    width:100%;
+    height:100%;
+    margin:auto;
+    display: block;
+    opacity: 0.9;
+    filter: alpha(opacity=80);
+  }
+
+  .login-button {
+    font-family: 'Roboto', sans-serif;
+    width: 150px;
+    border-radius: 3px;
+    font-size: 1.1em;
+    background-color: #2196F3;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+ }
+
+  .card-content{
+    margin:auto;
+    margin-bottom: 12320px;
+ }
+
+
+  .recupera_contraseña{
+    color :light;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 21px;
+    font-size: 10px;
+ }
+
+  img{
+    width: 50%;
+    height: 50%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display:block;
+    margin:auto;
+  }
+
+  h1 {
+    color : #39acdc;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size : absolute;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  P {
+    color : #39acdc;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 21px;
+    font-size: 15px;
+  }
+
+  ion-row {
+    align-items: center;
+    text-align: center;
+ }
+
+ ion-item {
+   font-family: inherit;
+   letter-spacing: inherit;
+   padding-left: 10px !important;
+   border-color: #bdc7d8;
+   border-radius: 5px;
+ }
+
+ ion-list {
+    margin: 0;
+  }
+
+}

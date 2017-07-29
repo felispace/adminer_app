@@ -1,0 +1,44 @@
+<ion-content no-padding>
+  <ion-card class="card-background-page">
+    <ion-card-content class="card-content">
+    <ion-row>
+    <ion-col>
+      <br><br>
+        <img src="../../assets/img/adminer_logo2.png">
+        <p style="color: #39acdc;">Bienvenido de nuevo!</p>
+    </ion-col>
+    <!--  <p *ngIf="loginForm.get('password').hasError('required')" color="secondary">Contraseña requerida</p>
+      <p *ngIf="loginForm.get('nombre').hasError('required')">Debe ingresar un nombre</p>-->
+    </ion-row>
+<form [formGroup]="loginForm" (ngSubmit)="validarUsuario()" novalidate>
+  <ion-row>
+    <ion-col>
+    <ion-list inset>
+      <ion-item>
+        <ion-label>Rut</ion-label>
+        <ion-input type="text" formControlName="nombre" placeholder="12345678-9"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" formControlName="password" placeholder="*********"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label>Recuerdame</ion-label>
+        <ion-checkbox color="light" checked="true"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+     <ion-col>
+       <button (click)="onClick()" ion-button type="submit" class="login-button">Entrar</button>
+     </ion-col>
+   </ion-row>
+    <ion-label class="recupera_contraseña">¿Olvidó su contraseña?</ion-label>
+</form>
+</ion-card-content>
+ </ion-card>
+</ion-content>

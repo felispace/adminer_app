@@ -1,0 +1,21 @@
+<ion-menu [content]="content">
+    <ion-content>
+      <ion-avatar class="menu-avatar">
+              <img src="./assets/img/profile.jpg">
+              <h4>Jose &nbsp;|&nbsp; Mecanico</h4>
+       </ion-avatar>
+        <ion-list>
+      <button menuClose no-lines ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" padding-right></ion-icon> {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+  <ion-footer no-lines>
+    <div padding-left>
+     Adminer v1.0
+     </div>
+  </ion-footer>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content></ion-nav>

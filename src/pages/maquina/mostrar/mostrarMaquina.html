@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Información</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+   <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-toolbar color="light">
+        <ion-title>Detalles del vehículo o equipo</ion-title>
+        </ion-toolbar>
+        </ion-col>
+      </ion-row>
+           <ion-row>
+             <ion-item>
+                <div padding-bottom>Tipo</div>
+                 <p>{{data.tipo}}</p>
+            </ion-item>
+         </ion-row>
+       <ion-row>
+         <ion-item>
+          <div padding-bottom>N° Identificador</div>
+          <p>{{data.id}}</p>
+         </ion-item>
+        <ion-item>
+         <div padding-bottom>Modelo</div>
+          <p>{{data.modelo}}</p>
+        </ion-item>
+        <ion-item>
+          <div padding-bottom>Seguro obligatorio</div>
+          <p>{{data.seguro}}</p>
+        </ion-item>
+        <ion-item>
+          <div padding-bottom>Permiso Circulación</div>
+          <p>{{data.permiso}}</p>
+        </ion-item>
+        <ion-item>
+          <div padding-bottom>Venc.Rev Técnica</div>
+          <p>{{data.fechaRevTec}}</p>
+        </ion-item>
+        <ion-item>
+          <div padding-bottom>Lugar inspección</div>
+          <p>{{data.lugarInspeccion}}</p>
+        </ion-item>
+       </ion-row>
+           </ion-grid>
+           <br>
+              <button class="boton" ion-button (click)="crearTicket()" block>Continuar<ion-icon name="arrow-forward" padding-left></ion-icon></button>
+           <br>
+         </ion-content>

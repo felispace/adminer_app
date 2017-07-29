@@ -1,0 +1,107 @@
+<ion-header>
+<ion-navbar>
+    <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+    <ion-title class="titulo">Detalles del ticket</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+  <div class="cabecerara_falla">
+    <ion-col>
+    <img class="imagen" [src]="datosFalla.imgFalla">
+        <ion-item text-center color="primary" no-lines>
+        <h1>{{datosFalla.titulo}}</h1>
+         <p class="subtitulo">{{datosFalla.mecanico}}</p>
+         <p class="subtitulo">{{datosFalla.fecha}}</p>
+        </ion-item>
+    </ion-col>
+  </div>
+</ion-content>
+
+<ion-content class="contenido_falla">
+      <!--Una tarjeta-->
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+         <img src="assets/img/profile.jpg">
+        </ion-avatar>
+        <h2>Jose perez</h2>
+        <p>24-06-2105 17:02</p>
+    </ion-item>
+      <ion-card-content>
+        <p>Se repara bomba en terreno quedando ok</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-right clear small>
+            <ion-icon name="camera"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  <!--otra tarjeta-->
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+         <ion-img width="" height="" src="assets/img/profile.jpg"></ion-img>
+        </ion-avatar>
+        <h2>Jose perez</h2>
+        <p>24-06-2105 17:02</p>
+      </ion-item>
+      <ion-card-content>
+        <p>Se instaló repuesto</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-right clear small>
+            <ion-icon name="camera"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <!--otra tarjeta-->
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-img width="" height="" src="assets/img/profile.jpg"></ion-img>
+         </ion-avatar>
+        <h2>Jose perez</h2>
+        <p>24-06-2105 17:02</p>
+      </ion-item>
+      <ion-card-content>
+        <p>Se solicitó un repuesto</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-right clear small>
+            <ion-icon name="camera"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  <!--otra tarjeta-->
+    <ion-card>
+      <ion-item>
+        <ion-avatar item-start>
+         <ion-img width="" height="" src="assets/img/profile.jpg"></ion-img>
+        </ion-avatar>
+        <h2>Jose perez</h2>
+        <p>24-06-2105 17:02</p>
+      </ion-item>
+      <ion-card-content>
+        <p>Se revisará bomba</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-right clear small>
+            <ion-icon name="camera"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  <!--Fin de las tarjetas-->
+    </ion-content>
+    <ion-fab bottom right>
+    <button ion-fab ion-buttom color="danger" (click)="nuevoComentario()"><ion-icon name="md-create"></ion-icon></button>
+    <!--<button ion-fab ion-buttom color="danger" [navPush]="crearTicket"><ion-icon name="md-create"></ion-icon></button>-->
+    </ion-fab>

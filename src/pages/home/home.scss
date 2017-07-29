@@ -1,0 +1,20 @@
+page-home {
+      ion-badge{
+        display: block;
+        font-size: 4.3rem;
+      }
+
+      .contador{
+        color:#fff;
+      }
+
+      .title.title-md {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        height: 100%;
+        width: 70%;
+        text-align: center;
+      }
+}

@@ -14,7 +14,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { BandejaPage } from '../pages/bandeja/bandeja';
-
+import { AgregarComentarioPage } from "../pages/ticket/agregar-comentario/agregarComentario";
 
 //servicios / provider
 import { GenerarTicketServicio } from "../providers/generarTicket";
@@ -46,6 +46,7 @@ import { MostrarTicket } from "../pages/modal/mostrarTicket";
     MostrarMaquinaPage,
     ModalConfirmarTicketPage,
     MostrarTicket,
+    AgregarComentarioPage,
     ],
   imports: [
     BrowserModule,
@@ -67,6 +68,7 @@ import { MostrarTicket } from "../pages/modal/mostrarTicket";
     MostrarMaquinaPage,
     ModalConfirmarTicketPage,
     MostrarTicket,
+    AgregarComentarioPage,
     ],
   providers: [
     StatusBar,

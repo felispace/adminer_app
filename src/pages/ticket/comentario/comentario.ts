@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { AgregarComentarioPage } from "../../ticket/agregar-comentario/agregarComentario";
 
 @IonicPage()
 @Component({
@@ -20,4 +20,7 @@ export class ComentarioPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
+  onClick(){
+    this.navCtrl.push(AgregarComentarioPage);
+  }
 }

@@ -21,16 +21,16 @@ import {Ticket} from "../interface/ticket.interface";
    <ion-content>
       <ion-list no-lines>
         <ion-item>
-          {{ticket.vehiculo}}<ion-icon item-end name="md-checkmark-circle"></ion-icon>
+          <ion-icon item-end name="md-checkmark-circle"></ion-icon>{{ticket.vehiculo}}
         </ion-item>
           <ion-item>
-            {{ticket.patente}}<ion-icon item-end name="md-checkmark-circle"></ion-icon>
+          <ion-icon item-end name="md-checkmark-circle"></ion-icon>{{ticket.patente}}
           </ion-item>
           <ion-item>
-            {{ticket.faena}}<ion-icon item-end name="md-checkmark-circle"></ion-icon>
+            <ion-icon item-end name="md-checkmark-circle"></ion-icon>{{ticket.faena}}
           </ion-item>
           <ion-item>
-            {{ticket.falla}}<ion-icon item-end name="md-checkmark-circle"></ion-icon>
+            <ion-icon item-end name="md-checkmark-circle"></ion-icon>{{ticket.falla}}
           </ion-item>
         <ion-row text-center padding-top>
           <ion-col>

@@ -1,5 +1,5 @@
 bandeja-page{
-  .title.title-md {
+.title.title-md{
     position: absolute;
     left: 50%;
     top: 0;
@@ -7,20 +7,37 @@ bandeja-page{
     height: 100%;
     width: 70%;
     text-align: left;
-  }
+    }
 
-.titulo{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:bold;
-  }
+.subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:lighter;
+    color:#0051FF;
+    font-size: 18px;
+    margin-left: 5%;
+    }
 
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:lighter;
-}
-.icon-fab {
+  ion-list{
+    background-color: #fff;
+  };
+
+ion-fab{
     font-size: 250px;
+    margin-right: 3%;
+    margin-bottom: 5%;
+    }
 
-  }
+ .tarjeta{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    }
+
+.slide-ver{
+    width: 50px;
+   }
+
+.slide-editar{
+    width: 55px;
+   }
+
 
 }

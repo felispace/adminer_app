@@ -1,12 +1,14 @@
 <ion-menu [content]="content">
     <ion-content>
-      <ion-avatar class="menu-avatar">
-              <img src="./assets/img/profile.jpg">
-              <h4>Jose &nbsp;|&nbsp; Mecanico</h4>
+      <div class="div-profile">
+      <ion-avatar>
+              <img class="menu-avatar" src="./assets/img/profile.jpg">
+              <h3>Jose Perez <br> Mecánico</h3>
        </ion-avatar>
+     </div><br>
         <ion-list>
       <button menuClose no-lines ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        <ion-icon [name]="p.icon" padding-right></ion-icon> {{p.title}}
+        <ion-icon class="ion-icon-side"[name]="p.icon" padding-right></ion-icon> {{p.title}}
       </button>
     </ion-list>
   </ion-content>

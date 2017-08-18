@@ -14,7 +14,6 @@ page-mostrar-maquina{
     cursor: pointer;
     color: white;
     padding: 15px 40px;
-    border-radius: 100%;
     font-size: 15px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
     background: #2196F3;
@@ -63,5 +62,21 @@ page-mostrar-maquina{
     animation: ripple 1s ease-out;
   }
 
+.subtitulo{
+      font-family: 'Montserrat', sans-serif;
+      font-weight:lighter;
+      color:#0051FF;
+      font-size: 18px;
+      margin-left: 5%;
+      }
+
+.tarjeta{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+}
+
+ion-thumbnail{
+  width: 5px;
+  height: 5px;
+}
 
 }

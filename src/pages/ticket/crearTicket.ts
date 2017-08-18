@@ -7,7 +7,7 @@ import { Camera, CameraOptions  } from '@ionic-native/camera';
 //firebase
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 //modal
-import { ModalConfirmarTicketPage } from "../modal/confirmarTicket";
+import { MostrarTicket } from "../modal/mostrarTicket";
 //interface
 import {Maquina} from "../interface/maquina.interface";
 
@@ -75,9 +75,9 @@ export class CrearTicketPage {
         }).present();
       }
 
-        confirmarTicket(){
+        mostrarTicket(){
           let ticket = this.formTicket.value
-          let modal = this.modalCtrl.create(ModalConfirmarTicketPage,{
+          let modal = this.modalCtrl.create(MostrarTicket,{
                       informacion:{
                         vehiculo:this.data.modelo,
                         patente:this.data.id,

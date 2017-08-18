@@ -1,5 +1,60 @@
 .ios, .md {
     page-crear-ticket {
+
+            .boton_aceptar {
+              border: none;
+              cursor: pointer;
+              color: white;
+              padding: 15px 40px;
+              border-radius: 5px;
+              font-size: 15px;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+              background: #2196F3;
+              margin-bottom: 25px;
+              margin-left: 33%;
+              margin-right: 33%;
+              width: 100px;
+            }
+
+            /* Ripple magic */
+            .boton_aceptar{
+              position: relative;
+              overflow: hidden;
+            }
+
+            .boton_aceptar:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 5px;
+              height: 5px;
+              background: rgba(255, 255, 255, .5);
+              opacity: 0;
+              border-radius: 100%;
+              transform: scale(1, 1) translate(-50%);
+              transform-origin: 50% 50%;
+            }
+
+            @keyframes ripple {
+              0% {
+                transform: scale(0, 0);
+                opacity: 1;
+              }
+              20% {
+                transform: scale(25, 25);
+                opacity: 1;
+              }
+              100% {
+                opacity: 0;
+                transform: scale(40, 40);
+              }
+            }
+
+            .boton_aceptar:focus:not(:active)::after {
+              animation: ripple 1s ease-out;
+            }
+
       p {
             font-size: 0.8em;
             color: #d2d2d2;
@@ -21,6 +76,12 @@
            padding: 10px !important;
          }
 
+         .cancelar{
+                 font-size: 0.8em;
+                 color: #fff;
+
+         }
+
         .list{
           width: 100% !important;
           border-bottom: 0100
@@ -39,73 +100,18 @@
     }
 
 
-     .item-md.item-input .item-inner {
-        border-bottom-color: transparent !important;
-        box-shadow: none !important;
-       }
+   .item-md.item-input .item-inner {
+      border-bottom-color: transparent !important;
+      box-shadow: none !important;
+     }
 
-       .list-md .item-input:last-child {
-          border-bottom-color: transparent !important; box-shadow: none !important;
-        }
+   .list-md .item-input:last-child {
+      border-bottom-color: transparent !important;
+      box-shadow: none !important;
+      }
 
-        .item-ios.item-block .item-inner {
-          border-bottom-color: transparent !important;
-        }
-
-        .boton {
-          font-family: 'Roboto', sans-serif;
-          border: none;
-          cursor: pointer;
-          color: white;
-          padding: 20px 40px;
-          border-radius: 3px;
-          font-size: 15px;
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
-          background: #2196F3;
-          margin-bottom: 25px;
-          margin: auto;
-          font-size: 1.1em;
-
-        }
-
-        /* Ripple magic */
-        .boton{
-          position: relative;
-          overflow: hidden;
-        }
-
-        .boton:after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 5px;
-          height: 5px;
-          background: rgba(255, 255, 255, .5);
-          opacity: 0;
-          border-radius: 100%;
-          transform: scale(1, 1) translate(-50%);
-          transform-origin: 50% 50%;
-        }
-
-        @keyframes ripple {
-          0% {
-            transform: scale(0, 0);
-            opacity: 1;
-          }
-          20% {
-            transform: scale(25, 25);
-            opacity: 1;
-          }
-          100% {
-            opacity: 0;
-            transform: scale(40, 40);
-          }
-        }
-
-        .boton:focus:not(:active)::after {
-          animation: ripple 1s ease-out;
-        }
-
+   .item-ios.item-block .item-inner {
+      border-bottom-color: transparent !important;
+      }
 
 }

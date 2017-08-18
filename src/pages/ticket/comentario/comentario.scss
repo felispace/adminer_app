@@ -1,14 +1,9 @@
 page-comentario {
-  .cabecera_falla{
 
+.item-content{
+  background: #0051FF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
 }
-
-  .imagen{
-    max-width: 100%;
-    height: auto;
-
-}
-
 
   .contenido_falla{
     left: 0px;
@@ -20,18 +15,33 @@ page-comentario {
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
     text-align: left;
+
 }
 
   .subtitulo{
     text-align:left;
-    font-style: italic;
-    font-size: 12px;
-}
+    font-size: 13px;
+    color:white;
+  }
 
   h1{
     text-align: left;
+    color: white;
+    font-style: bold;
 }
 
+  h2{
+    color:#0051FF;
+    font-size: 15px;
+    font-weight: bold;
+}
 
-
+  ion-fab{
+    font-size: 250px;
+    margin-right: 4%;
+    margin-bottom: 5%;
+}
+img{
+  position:relative;
+}
 }

@@ -5,29 +5,55 @@
   padding: 21px;
   width: 50%;
   height: 80%;
+
   }
 
- h4{
-   color: #ffffff;
+ h3{
    display: block;
    margin-top: -0.4rem;
-   text-align: center;
+   padding-bottom: 5px;
+   text-align:center;
    font-weight: 100 !important;
-   font-size: 14px;
+   font-size: 18px;
+   font-family: 'Graphik', sans-serif;
+   font-weight:lighter;
+   color:#fff;
+
  }
 
-
   .menu-avatar{
-    height: 160px;
-    background: #8BC34A;
+    border-radius: 50%;
   }
 
-
-
-.toolbar-background {
-    background-color: #2b78e4;
+.div-profile{
+  background-image: url(../assets/img/material-background.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
 }
 
-.toolbar-title{
-    color: #ffffff;
+.ion-icon-side{
+  color:#808080;
 }
+
+
+  $SIDEMENU_TOP: #FFAE00;
+  $SIDEMENU_BOTTOM: #FFAE00;
+  $SIDEMENU_TRANSPARENCY: rgba(255,149,0,0.4);
+
+  .toolbar-background-md {
+      background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background-repeat: repeat-x;
+  }
+
+  .toolbar-background-ios{
+      background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+      background-repeat: repeat-x;
+
+  }

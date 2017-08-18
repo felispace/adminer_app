@@ -8,33 +8,17 @@ import { BandejaPage } from "../bandeja/bandeja";
 @Component({
   selector : 'page-mostrar-ticket',
   template : `
-  <ion-header>
-     <ion-toolbar>
-       <ion-title>
-         TICKET CREADO
-       </ion-title>
-     </ion-toolbar>
-  </ion-header>
-      <ion-content>
-      <ion-card>
-    <ion-card-header text-center>
+  <ion-content>
+    <ion-card class="card-background-page">
+    <ion-card-content class="card-content" text-center>
     <h1><ion-icon name="md-checkmark-circle" color="secondary"></ion-icon></h1>
-      <h1>Ticket Creado!</h1>
-    </ion-card-header>
-    <ion-card-content text-center>
-    <p>Genial creaste el ticket numero</p>
-    <h1 color="light">#00102</h1>
-    </ion-card-content>
-</ion-card>
-       </ion-content>
-     <ion-footer>
-  <ion-toolbar color="secondary" text-center>
-    <ion-buttons>
-    <button ion-button clear (click)="bandejaEntrada()">ir a bandeja de entrada</button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>
-  `
+    <h1>Ticket Creado!</h1>
+      <p>Genial, creaste el ticket numero</p>
+      <h1 color="light">#00102</h1>
+      </ion-card-content>
+        <button class="boton_aceptar" ion-button (click)="bandejaEntrada()">Aceptar</button>
+      </ion-card>
+  </ion-content>`
 })
 
 

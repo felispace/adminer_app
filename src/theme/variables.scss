@@ -44,13 +44,9 @@ $colors: (
 
 
 
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-$toolbar-md-title-font-size: 1.5rem;
 
 
 // App Windows Variables
@@ -69,6 +65,16 @@ $toolbar-md-title-font-size: 1.5rem;
 
 @import "ionic.theme.default";
 
+$toolbar-md-title-font-size: 1.5rem;
+$toolbar-md-title-text-color: #fff;
+$toolbar-ios-title-text-color: #fff;
+$toolbar-wp-title-text-color: #fff;
+
+.titulo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+
+  }
 
 // Ionicons
 // --------------------------------------------------

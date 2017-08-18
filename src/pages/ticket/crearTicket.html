@@ -6,11 +6,12 @@
       <ion-title>Nuevo Ticket</ion-title>
       <ion-buttons end>
         <button ion-button (click)="bandejaEntrada()">
-          <ion-icon name="mail-open"></ion-icon>
+          <p class="cancelar">Cancelar</p>
         </button>
       </ion-buttons>
   </ion-navbar>
 </ion-header>
+
 <ion-content>
     <div no-lines padding-top>
             <form [formGroup]="formTicket">
@@ -24,15 +25,14 @@
               </ion-item>
 
               <ion-item no-lines>
-                    <ion-select  formControlName="faena" placeholder="Seleccionar faena">
-                        <ion-option *ngFor="let faena of faenas | async">{{faena.nombre_faena}}</ion-option>
-                    </ion-select>
+                  <ion-select  formControlName="faena" placeholder="Seleccionar faena">
+                      <ion-option *ngFor="let faena of faenas | async">{{faena.nombre_faena}}</ion-option>
+                  </ion-select>
               </ion-item>
 
           <ion-item no-lines margin-top>
              <ion-input type="text" [(ngModel)]="asistente" placeholder="Asignar asistente" formControlName="asistente"></ion-input>
           </ion-item>
-
               <ion-card>
                 <ion-card-header>
                   <ion-fab right>
@@ -44,10 +44,9 @@
                   <img [src]="imgPreview" alt="">
                 </ion-card-content>
               </ion-card>
-              <ion-item>
-                <button ion-button type="button" (click)="confirmarTicket()"  block  [disabled]="!formTicket.valid" class="boton">Crear ticket</button>
-              </ion-item>
-              <br>
         </form>
       </div>
+      <ion-item>
+        <button class="boton_aceptar" ion-button type="button" (click)="mostrarTicket()" block [disabled]="!formTicket.valid">Crear ticket<ion-icon name="checkmark"padding-left></ion-icon></button>
+      </ion-item>
       </ion-content>

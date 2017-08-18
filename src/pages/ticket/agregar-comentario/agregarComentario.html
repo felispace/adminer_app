@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+      <ion-title>Solución</ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="bandejaEntrada()">
+          <p class="cancelar">Cancelar</p>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+    <p class="subtitulo">Comenta la reparación</p>
+  <ion-card>
+            <ion-item>
+                <ion-input type="text" placeholder="Escribe la reparación aquí"></ion-input>
+            </ion-item>
+            <ion-fab right>
+              <button ion-fab color="danger" (click)="abrir_camara()"><ion-icon name="add"></ion-icon><ion-icon name="camera"></ion-icon></button>
+            </ion-fab>
+            <ion-card-content>
+                <img src="../../assets/img/thumbnail-default.jpg"/>
+            </ion-card-content>
+      <ion-note>
+        Hace 1 segundo
+      </ion-note>
+  </ion-card>
+  <ion-item no-lines>
+    <button class="boton" ion-button block>Guardar</button>
+  </ion-item>
